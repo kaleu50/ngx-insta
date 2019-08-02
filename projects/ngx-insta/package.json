@@ -1,6 +1,23 @@
 {
   "name": "ngx-insta",
   "version": "0.0.1",
+  "description": "Library using instagram API",
+  "author": "Giovanni Dias",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaleu50/ngx-insta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaleu50/ngx-insta/issues"
+  },
+  "homepage": "https://github.com/kaleu50/ngx-insta",
+  "keywords": [
+    "angular",
+    "instagram",
+    "instagramAPI",
+    "typescript"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.1.2",
     "@angular/core": "^8.1.2"

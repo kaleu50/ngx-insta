@@ -1,24 +1,41 @@
-# NgxInsta
+# :camera: Ngx-Insta
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+This project was based on [InstaFeed2](https://github.com/JoeKarlsson/instafeed-2.0).
 
-## Code scaffolding
+# Getting Starded
+## Installation instructions
+Install `ngx-insta` from `npm`:
+```bash
+npm install ngx-insta --save
+```
 
-Run `ng generate component component-name --project ngx-insta` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-insta`.
-> Note: Don't forget to add `--project ngx-insta` or else it will be added to the default project in your `angular.json` file. 
+Add needed package to NgModule imports:
+```
+import { NgxInstaModule } from 'ngx-insta';
 
-## Build
+@NgModule({
+  ...
+  imports: [NgxInstaModule,...]
+  ...
+})
+```
 
-Run `ng build ngx-insta` to build the project. The build artifacts will be stored in the `dist/` directory.
+Add component to your page:
+```
+<ngx-insta [config]="config"></ngx-insta>
+```
+## Config
+```
+  config: any = {
+    count: '10' , // any int value
+    idUser: '#YOUR_IDUSER',
+    tokenUser: '#YOUR_TOKEN',
+    grid: true // false is list true is grid
+  };
+```
 
-## Publishing
+# License
 
-After building your library with `ng build ngx-insta`, go to the dist folder `cd dist/ngx-insta` and run `npm publish`.
+[MIT](LICENSE)
 
-## Running unit tests
 
-Run `ng test ngx-insta` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
