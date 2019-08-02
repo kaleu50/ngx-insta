@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngx-insta-app';
+  config: any = {
+    count: '10' , // ANY INT VALUE
+    idUser: '#YOUR_IDUSER',
+    tokenUser: '#YOUR_TOKEN',
+    grid: true
+  };
 }

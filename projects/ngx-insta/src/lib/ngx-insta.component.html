@@ -1,0 +1,26 @@
+<section class="section section-sm">
+  <div class="container-fluid clearfix d-flex">
+    <ul class="grid" *ngIf="grid">
+      <!-- A view wtih big Photos and no text -->
+      <li *ngFor="let photo of photos">
+        <lib-photo
+          [link]="photo.link"
+          [thumbnail]="photo.images.low_resolution.url"
+        >
+        </lib-photo>
+      </li>
+    </ul>
+
+    <ul class="list" *ngIf="!grid">
+      <!-- A compact view smaller photos and titles -->
+      <li *ngFor="let photo of photos">
+        <lib-photo
+          [link]="photo.link"
+          [caption]="photo.caption.text"
+          [thumbnail]="photo.images.thumbnail.url"
+        >
+        </lib-photo>
+      </li>
+    </ul>
+  </div>
+</section>
